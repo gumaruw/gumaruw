@@ -1,0 +1,42 @@
+name: Update Contributions
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # İş akışı her gün gece yarısı çalışır.
+  push:
+    branches:
+      - main  # Ana branşa her push işlemi yapıldığında çalışır.
+
+jobs:
+  update-contributions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch recent contributions
+        run: |
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/users/gumaruw/events \
+          | jq '[.[] | select(.type == "PushEvent")] | .[0:5]' > contributions.json
+
+      - name: Update README
+        run: |
+          recent_contributions=$(jq -r 'map("<li><a href=\"\(.repo.url)\">\(.repo.name)</a>: \(.payload.commits | map(.message) | join(", "))</li>") | join("\n")' contributions.json)
+          sed -i 's|<ul id="recent-contributions">.*</ul>|<ul id="recent-contributions">\n'"$recent_contributions"'\n</ul>|g' README.md
+
+      - name: Check for changes
+        id: git_status
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          echo "::set-output name=changes::$(git status --porcelain)"
+
+      - name: Commit changes
+        if: steps.git_status.outputs.changes != ''
+        run: |
+          git commit -m "Update recent contributions in README"
+          git push
