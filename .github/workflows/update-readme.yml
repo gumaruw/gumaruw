@@ -2,10 +2,10 @@ name: Update README
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # This runs the workflow every day at midnight.
+    - cron: '0 0 * * *'  # İş akışı her gün gece yarısı çalışır.
   push:
     branches:
-      - main  # This runs the workflow on every push to the main branch.
+      - main  # Ana branşa her push işlemi yapıldığında çalışır.
 
 jobs:
   update-readme:
