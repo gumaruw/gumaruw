@@ -26,9 +26,10 @@ jobs:
           npm install
           npm run update-readme
 
-      - name: Update README with stats
+      - name: Fetch recent contributions
         run: |
-          sed -i 's|<div align="center">.*</div>|<div align="center">\n  <img src="https://github-readme-stats.vercel.app/api?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=vue-dark&locale=en&hide_border=false&username=gumaruw" height="150" alt="stats graph"  />\n  <img src="https://github-readme-stats.vercel.app/api/top-langs?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=vue-dark&hide_border=false&username=gumaruw" height="150" alt="languages graph"  />\n</div>|g' README.md
+          recent_contributions=$(jq -r 'map("<li><a href=\"\\(.repo.url)\">\\(.repo.name)</a>: \\(.payload.commits | map(.message) | join(", "))</li>") | join("\n")' contributions.json)
+          sed -i 's|<div align="center">.*</div>|<div align="center">\n'"$recent_contributions"'\n</div>|g' README.md
 
       - name: Check for changes
         id: git_status
@@ -36,6 +37,11 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
+          echo "::set-output name=changes::$(git status --porcelain)"
+
+      - name: Commit and Push changes
+        if: steps.git_status.outputs.changes != ''
+        run: |
           git commit -m "Updated README with recent activity"
           git push
         env:
