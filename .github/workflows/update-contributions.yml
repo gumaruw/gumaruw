@@ -24,7 +24,7 @@ jobs:
 
       - name: Update README
         run: |
-          recent_contributions=$(jq -r 'map("<li><a href=\"\(.repo.url)\">\(.repo.name)</a>: \(.payload.commits | map(.message) | join(", "))</li>") | join("\n")' contributions.json)
+          recent_contributions=$(jq -r 'map("<li><a href=\"\\(.repo.url)\">\\(.repo.name)</a>: \\(.payload.commits | map(.message) | join(", "))</li>") | join("\n")' contributions.json)
           sed -i 's|<ul id="recent-contributions">.*</ul>|<ul id="recent-contributions">\n'"$recent_contributions"'\n</ul>|g' README.md
 
       - name: Check for changes
