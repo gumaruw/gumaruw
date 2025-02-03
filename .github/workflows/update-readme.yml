@@ -2,10 +2,11 @@ name: Update README
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # İş akışı her gün gece yarısı çalışır.
+    - cron: '0 0 * * *'  # İş akışı her gün gece yarısı çalışır
   push:
     branches:
-      - main  # Ana branşa her push işlemi yapıldığında çalışır.
+      - main  # Ana branşa her push işlemi yapıldığında çalışır
+  workflow_dispatch:
 
 jobs:
   update-readme:
@@ -15,7 +16,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Update README
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Run Activity Log Script
+        run: |
+          npm install
+          npm run update-readme
+
+      - name: Update README with stats
         run: |
           sed -i 's|<div align="center">.*</div>|<div align="center">\n  <img src="https://github-readme-stats.vercel.app/api?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=vue-dark&locale=en&hide_border=false&username=gumaruw" height="150" alt="stats graph"  />\n  <img src="https://github-readme-stats.vercel.app/api/top-langs?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=vue-dark&hide_border=false&username=gumaruw" height="150" alt="languages graph"  />\n</div>|g' README.md
 
@@ -25,10 +36,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          echo "::set-output name=changes::$(git status --porcelain)"
-
-      - name: Commit changes
-        if: steps.git_status.outputs.changes != ''
-        run: |
-          git commit -m "Update README"
+          git commit -m "Updated README with recent activity"
           git push
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
