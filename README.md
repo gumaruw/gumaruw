@@ -12,9 +12,6 @@
 <a href="https://www.kaggle.com/gumaruw" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Kaggle&logo=kaggle&label=&color=20BEFF&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="kaggle logo"/>
 </a>
-<a href="https://cemred.medium.com/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Medium&logo=medium&label=&color=black&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="medium logo"/>
-</a>
 
 <br clear="both">
 
@@ -45,7 +42,6 @@ I'm always open to interesting discussions and collaboration opportunities. Feel
 - **Email:** cemred.istanbul@gmail.com
 - **LinkedIn:** [Cemre's LinkedIn](https://www.linkedin.com/in/cemred/)
 - **Kaggle:** [Cemre's Kaggle](https://www.kaggle.com/gumaruw)
-- **Medium:** [Cemre's Medium](https://cemred.medium.com/)
 
 ---
 
