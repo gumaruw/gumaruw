@@ -17,33 +17,36 @@
 
 ## About Me
 
-I am a data-driven problem solver with a passion for sustainability and technology. With a vision to make the world a better place through the technologies of the future, I believe in the potential of artificial intelligence and machine learning to create sustainable solutions.
+I am a data-driven problem solver with a passion for sustainability and technology. With a vision to make the world a better place through cutting-edge AI solutions, I develop innovative approaches to address real-world challenges that humanity faces.
 
-As a Software Engineering student, I have gained hands-on experience in artificial intelligence and data science through various internships and projects. I am especially motivated to develop innovative and efficient approaches to the challenges humanity faces, aiming to create a positive impact by using technology.
+As a Software Engineering student specializing in AI and Data Science, I've built expertise in neural networks architecture, predictive modeling, computer vision, and advanced analytics. My experience spans developing high-impact machine learning solutions using frameworks like TensorFlow, PyTorch, and scikit-learn. I'm proficient in implementing RAG systems, ensemble learning methods, and NLP techniques that transform complex datasets into actionable intelligence.
 
-My commitment to lifelong learning drives me to continuously deepen my knowledge in this field and engage with innovative projects that create a positive impact in the industry. I value sustainability, social responsibility, and continuous development. With discipline, creativity, and determination, I aim to make a difference in the world of technology and contribute to dynamic teams and cutting-edge initiatives.
+I combine technical excellence with innovative thinking to create scalable AI solutions that deliver strategic outcomes and significant improvements in accuracy and efficiency. My commitment to lifelong learning drives me to continuously deepen my knowledge and engage with projects that create positive social and environmental impact.
 
 <details>
 <summary>🌱 Currently Learning</summary>
 <br>
 
-- Advanced machine learning techniques and neural networks
-- Time series forecasting and predictive analytics
-- Cloud computing architectures and deployment
-- Sustainable AI solutions and ethical data practices
-- Real-time data processing and visualization
+- Advanced deep learning architectures and optimization techniques
+- RAG (Retrieval-Augmented Generation) systems and transformer models
+- Computer vision algorithms for medical image analysis
+- Edge computing solutions for AI model deployment
+- Ethical AI frameworks and responsible machine learning practices
 
 </details>
 
 ## Technologies & Tools
 
-- **Languages:** Python, SQL, NoSQL, JavaScript, Java
-- **ML/Data Science:** TensorFlow, Scikit-learn, Pandas, NumPy, XGBoost, LightGBM
+- **Languages:** Python, SQL, JavaScript, Java, C#
+- **ML/Data Science:** TensorFlow, PyTorch, scikit-learn, Pandas, NumPy, XGBoost, LightGBM
+- **Deep Learning:** CNN architectures, Transformer models, Neural networks
+- **NLP & LLMs:** RAG systems, Context-aware response generation
+- **Computer Vision:** OpenCV, Image preprocessing techniques
+- **Time Series:** Forecasting, Feature engineering for temporal data
 - **Visualization:** Matplotlib, Seaborn
-- **API Integration:** REST APIs, CoinGecko API
-- **Frameworks:** React, Node.js
-- **Databases:** MySQL, SQL Server
-- **Cloud:** BigQuery
+- **Databases:** MySQL, SQL Server, Vector databases
+- **API Integration:** REST APIs, CoinGecko API, Gemini API
+- **Cloud:** Azure, Google (BigQuery, Vertex AI)
 - **Tools:** Git, VS Code, Kaggle
 
 ## GitHub Stats
@@ -52,6 +55,87 @@ My commitment to lifelong learning drives me to continuously deepen my knowledge
   <img src="https://github-readme-stats.vercel.app/api?username=gumaruw&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" height="170" alt="stats graph" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gumaruw&layout=compact&theme=tokyonight&langs_count=6&hide_border=true" height="170" alt="languages graph" />
 </div>
+
+## Featured Projects
+
+### 🧠 SifAI - Brain Tumor Detection System
+*Feb 2025 - Present*
+
+Developing a comprehensive medical diagnostic tool leveraging deep learning to detect and classify brain tumors from MRI images with high precision and reliability.
+
+**Key Achievements:**
+- ‎‎
+- ‎
+- ‎
+
+**Technologies:** Python, TensorFlow, OpenCV, scikit-learn, Ensemble methods, CNN architecture
+
+### 📊 DocuMind - Local RAG System for Financial Document Analysis
+*Jan 2025 - Present | Associated with UNLU & Co*
+
+Created a secure Retrieval-Augmented Generation (RAG) system tailored for the finance sector, enabling efficient extraction of insights from complex financial documents while maintaining data security.
+
+**Key Achievements:**
+- Developed comprehensive document processing pipeline with custom parsing and embedding generation
+- Achieved 70% accuracy in text-based Q&A tasks on complex financial documents
+- Reduced document analysis time by 65% compared to manual methods
+- Maintained complete data security through local deployment architecture
+
+**Technologies:** Python, Transformer models, Vector databases, Embedding techniques, RAG architecture
+
+### 🥗 Food Detective - AI-Powered Meal Tracking Application
+*Jan 2025 - Present*
+
+Led AI component development for an intelligent mobile application that identifies food items from images, provides nutritional analysis, and enables comprehensive meal tracking.
+
+**Key Achievements:**
+- Achieved 88% accuracy in food item identification across diverse cuisine types
+- Developed journal investigation feature using Gemini API for personalized diet insights
+- Currently preparing for beta launch in Q3 2025
+
+**Technologies:** Python, TensorFlow, Gemini API, Computer Vision, SQL, Google Cloud (BigQuery, Vertex AI) 
+
+### 👐 Real-Time Sign Language Alphabet Recognition System
+*Oct 2024 - Jan 2025 | Associated with Doğuş University*
+
+Led team development of an advanced computer vision system for real-time recognition of American Sign Language letters, enhancing communication accessibility.
+
+**Key Achievements:**
+- Achieved over 90% accuracy in American Sign Language alphabet recognition in real-time
+- Successfully processed video at 25+ FPS on standard hardware, enabling fluid interaction
+- Developed system capable of functioning in varied lighting conditions and backgrounds
+
+**Technologies:** Python, TensorFlow, OpenCV, CNN architecture, Real-time processing
+
+## Additional Projects
+
+### 💰 Cryptocurrency Data Analysis and Visualization
+*Feb 2025 - Present*
+
+Built comprehensive data pipeline and analytics system to fetch, process, and visualize cryptocurrency market data using the CoinGecko API.
+
+**Technologies:** Python, Requests, Pandas, Matplotlib, API integration
+
+### 📈 Time Series Forecasting for Retail Sales Prediction
+*Dec 2024 - Present*
+
+Participated in Kaggle competition developing advanced time series forecasting models to predict store sales across multiple locations.
+
+**Technologies:** Python, XGBoost, Time Series Analysis, Feature Engineering
+
+### 🚲 Bike Sharing Demand Prediction System
+*Jan 2025*
+
+Engineered comprehensive machine learning pipeline to predict bike sharing demand using multiple modeling approaches.
+
+**Technologies:** Pandas, Scikit-learn, Matplotlib, Seaborn, Random Forest, Gradient Boosting
+
+### 🏠 California Housing Price Prediction Model
+*Dec 2024*
+
+Developed advanced regression models to predict housing prices using comprehensive feature engineering and ensemble methods.
+
+**Technologies:** Python, Scikit-learn, LightGBM, XGBoost, Statistical analysis
 
 ## Technical Expertise
 
@@ -69,6 +153,10 @@ I am committed to leveraging technology for positive social and environmental im
 - **Accessibility:** Developing tools like sign language recognition to support inclusive communication
 - **Sustainable Decision-Making:** Building data analysis frameworks that support environmentally conscious choices
 - **Ethical AI Development:** Ensuring AI systems are fair, transparent, and beneficial to all users
+
+## Career Objectives
+
+Seeking opportunities in Data Science, Machine Learning Engineering, and AI Development roles with innovative international organizations. Focused on leveraging my expertise in developing AI solutions that transform complex data into actionable insights and create meaningful impact. Particularly interested in remote or on-site positions with companies committed to advancing AI technologies for positive social change and sustainability.
 
 ## Let's Connect
 
