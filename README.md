@@ -1,7 +1,7 @@
 # Hello, I'm Cemre!
 
 <a href="https://linktr.ee/cemred" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Linktree&logo=linktree&label=&color=39E09B&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linktree logo"/>
+    <img src="https://img.shields.io/badge/Linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white" height="35" alt="linktree logo"/>
 </a>
 <a href="mailto:cemred.istanbul@gmail.com" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Email&logo=gmail&label=&color=EA4335&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="email logo"/>
