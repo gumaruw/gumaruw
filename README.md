@@ -72,7 +72,7 @@
 ## 🎭 random joke badge (live)
 <p>
   <!-- replace the URL below with your deployed worker URL -->
-  <img src="https://REPLACE_WITH_YOUR_WORKER_SUBDOMAIN.workers.dev/joke.svg" alt="random joke badge" />
+  <img src="https://joke-badge2.cemredag16.workers.dev/" alt="random joke badge" />
 </p>
 <small>
 this image fetches a new joke on every load (cloudflare worker). no caching; fresh joke = fresh smile.
