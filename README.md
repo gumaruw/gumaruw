@@ -2,7 +2,7 @@
 
 <div align="center">
   <small style="color:#6b7280; font-size:13px;">
-    machine learning engineer • deep learning • nlp • mlops
+    machine learning engineer • computer vision • nlp • mlops
   </small>
 </div>
 
