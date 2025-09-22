@@ -26,7 +26,6 @@
   </a>
 </div>
 
-
 ---
 
 ## 📈 GitHub Stats
@@ -39,13 +38,9 @@
 
 ## 🎭 Random Joke Badge (Live)
 <p>
-  <!-- replace the URL below with your deployed worker URL -->
+  <!-- This image fetches a new joke on every load (Cloudflare Worker).  -->
   <img src="https://joke-badge2.cemredag16.workers.dev/" alt="random joke badge" />
 </p>
-<small>
-This image fetches a new joke on every load (Cloudflare Worker). 
-</small>
-
 
 ---
 
