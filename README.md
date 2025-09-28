@@ -9,9 +9,6 @@
 
 <div align="center">
   <!-- Links / badges -->
-  <a href="https://linktr.ee/cemred" target="_blank">
-    <img src="https://img.shields.io/badge/Linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white" alt="linktree"/>
-  </a>
   <a href="mailto:cemred.istanbul@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email"/>
   </a>
