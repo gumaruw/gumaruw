@@ -1,4 +1,5 @@
-// index.js - Cloudflare Worker for a dynamic "random joke" SVG badge
+// index.js - Cloudflare Worker for a dynamic "random joke" SVG badge 
+
 const jokes = [
   "Why did the developer go broke? Because he used up all his cache.",
   "Why do data scientists love tea? Because it comes with a good 'chai' of thought.",
@@ -13,7 +14,6 @@ const jokes = [
 ];
 
 function randInt(max) {
-  // cryptographically random
   const arr = new Uint32Array(1);
   crypto.getRandomValues(arr);
   return arr[0] % max;
@@ -23,51 +23,66 @@ function escapeHtml(s) {
   return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
 }
 
-function truncate(s, n=72) {
+function truncate(s, n = 72) {
   if (s.length <= n) return s;
-  return s.slice(0, n-1).trimEnd() + '…';
+  return s.slice(0, n - 1).trimEnd() + "…";
 }
 
-addEventListener('fetch', event => {
+addEventListener("fetch", event => {
   event.respondWith(handle(event.request));
 });
 
 async function handle(request) {
-  // choose random joke
   const joke = jokes[randInt(jokes.length)];
   const text = truncate(joke, 72);
   const escaped = escapeHtml(text);
 
-  // SVG dimensions and small font size for "smaller characters"
   const width = 520;
   const height = 40;
   const padding = 12;
 
   const svg = `<?xml version="1.0" encoding="UTF-8"?>
-  <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escaped}">
-    <style>
-      .bg { fill: #0f172a; }
-      .pill { fill: rgba(255,255,255,0.06); rx: 6; ry: 6; }
-      .text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; font-size:12px; fill: #e6edf3; }
-      .label { font-weight:600; font-size:11px; fill:#9aa8b2; }
-    </style>
+<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escaped}">
+  <style>
+    /* system theme colors */
+    :root {
+      --bg: #f1f5f9;
+      --pill: rgba(0,0,0,0.06);
+      --text: #1e293b;
+      --label: #475569;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --pill: rgba(255,255,255,0.06);
+        --text: #e6edf3;
+        --label: #9aa8b2;
+      }
+    }
 
-    <rect width="100%" height="100%" class="bg" rx="6" ry="6" />
-    <g transform="translate(${padding}, ${height/2})">
-      <rect x="0" y="-14" width="${width - padding*2}" height="28" class="pill" />
-      <text class="label" x="10" y="6">joke</text>
-      <text class="text" x="58" y="6">${escaped}</text>
-    </g>
-  </svg>`;
+    .bg { fill: var(--bg); }
+    .pill { fill: var(--pill); rx: 6; ry: 6; }
+    .text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            font-size:12px; fill: var(--text); }
+    .label { font-weight:600; font-size:11px; fill: var(--label); }
+  </style>
 
-  const headers = {
-    'Content-Type': 'image/svg+xml; charset=utf-8',
-    // no caching so every reload gets a new joke
-    'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
-    'Pragma': 'no-cache',
-    'Expires': '0',
-    'Access-Control-Allow-Origin': '*'
-  };
+  <rect width="100%" height="100%" class="bg" rx="6" ry="6" />
+  <g transform="translate(${padding}, ${height/2})">
+    <rect x="0" y="-14" width="${width - padding*2}" height="28" class="pill" />
+    <text class="label" x="10" y="6">joke</text>
+    <text class="text" x="58" y="6">${escaped}</text>
+  </g>
+</svg>`;
 
-  return new Response(svg, { status: 200, headers });
+  return new Response(svg, {
+    status: 200,
+    headers: {
+      "Content-Type": "image/svg+xml; charset=utf-8",
+      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "Pragma": "no-cache",
+      "Expires": "0",
+      "Access-Control-Allow-Origin": "*"
+    }
+  });
 }
