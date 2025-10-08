@@ -30,11 +30,3 @@
   <img src="https://github-readme-stats.vercel.app/api?username=gumaruw&show_icons=true&theme=tokyonight&&count_private=true&hide_border=true" height="140" alt="stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gumaruw&layout=compact&theme=tokyonight&langs_count=6&hide_border=true" height="140" alt="langs" />
 </div>
-
----
-
-## Contact
-- [Portfolio](https://gumaruw.github.io/)
-- [LinkedIn](https://www.linkedin.com/in/cemred/) 
-- [Kaggle](https://www.kaggle.com/gumaruw)
-- [E-Mail](cemred.istanbul@gmail.com) 
