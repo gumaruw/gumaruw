@@ -1,32 +1,35 @@
-# Hi, I'm Cemre.
+# Hi, It's Cemre
 
 <div align="center">
-  <small style="color:#6b7280; font-size:13px;">
-    Machine Learning Engineer • Computer Vision 
-  </small>
+  <h3>Machine Learning Engineer</h3>
 </div>
 
-
 <div align="center">
-  <!-- Links / badges -->
-  <a href="mailto:cemred.istanbul@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email"/>
+  <a href="mailto:cemred.istanbul@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  <a href="https://www.linkedin.com/in/cemred/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/>
+  <a href="https://www.linkedin.com/in/cemred/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="https://www.kaggle.com/gumaruw" target="_blank">
-    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="kaggle"/>
+  <a href="https://www.kaggle.com/gumaruw">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
   </a>
-  <a href="https://gumaruw.github.io/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logoColor=white" alt="portfolio"/>
+  <a href="https://gumaruw.github.io/">
+    <img src="https://img.shields.io/badge/Portfolio-48C78D?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio"/>
   </a>
 </div>
 
----
+<br>
 
-## GitHub Stats
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gumaruw&show_icons=true&theme=tokyonight&&count_private=true&hide_border=true" height="140" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gumaruw&layout=compact&theme=tokyonight&langs_count=6&hide_border=true" height="140" alt="langs" />
+  <table style="border: none; border-collapse: collapse;">
+    <tr>
+      <td align="center" style="border: none; padding: 0;">
+        <img src="https://github-readme-stats.vercel.app/api?username=gumaruw&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&hide_title=true&card_width=400" width="400" alt="GitHub Stats"/>
+      </td>
+      <td align="center" style="border: none; padding: 0;">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gumaruw&layout=compact&theme=tokyonight&langs_count=6&hide_border=true&hide_title=true&card_width=400" width="400" alt="Top Languages"/>
+      </td>
+    </tr>
+  </table>
 </div>
