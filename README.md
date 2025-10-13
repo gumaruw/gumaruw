@@ -25,10 +25,10 @@
   <table style="border: none; border-collapse: collapse;">
     <tr>
       <td align="center" style="border: none; padding: 0;">
-        <img src="https://github-readme-stats.vercel.app/api?username=gumaruw&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&hide_title=true&card_width=400" width="400" alt="GitHub Stats"/>
+        <img src="https://github-readme-stats.vercel.app/api?username=gumaruw&show_icons=true&count_private=true&hide_border=true&hide_title=true&card_width=400&theme=tokyonight&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&bg_color=0d1117" width="400" alt="gumaruw's GitHub Stats"/>
       </td>
       <td align="center" style="border: none; padding: 0;">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gumaruw&layout=compact&theme=tokyonight&langs_count=6&hide_border=true&hide_title=true&card_width=400" width="400" alt="Top Languages"/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gumaruw&layout=compact&theme=tokyonight&title_color=58a6ff&hide_title=true&text_color=c9d1d9&langs_count=6&hide_border=true&card_width=400&bg_color=0d1117" width="400" alt="gumaruw's Top Languages"/>
       </td>
     </tr>
   </table>
