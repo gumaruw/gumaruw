@@ -1,7 +1,7 @@
 # Hi, It's Cemre
 
 <div align="center">
-  <h3>Machine Learning Engineer</h3>
+  <!-- <h3>Machine Learning Engineer</h3> -->
 </div>
 <div align="center" style="display: flex; gap: 10px; justify-content: center;">
   <a href="https://gumaruw.github.io/">
@@ -17,8 +17,9 @@
     <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
   </a>
 </div>
-<br>
 
+<!--
+<br>
 <div align="center">
   <table style="border: none; border-collapse: collapse;">
     <tr>
