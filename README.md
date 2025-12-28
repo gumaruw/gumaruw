@@ -1,4 +1,4 @@
-# Hi, It's Cemre
+# hi, it's cemre
 
 <div align="center">
   <!-- <h3>Machine Learning Engineer</h3> -->
