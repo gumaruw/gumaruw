@@ -4,15 +4,16 @@
   <!-- <h3>Machine Learning Engineer</h3> -->
 </div>
 <div align="center" style="display: flex; gap: 10px; justify-content: center;">
-  <a href="https://gumaruw.github.io/">
-    <img src="https://img.shields.io/badge/Portfolio-48C78D?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio"/>
-  </a>
+  
  <a href="https://www.linkedin.com/in/cemred/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="https://www.kaggle.com/gumaruw">
-    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
+ <!-- <a href="https://gumaruw.github.io/">
+    <img src="https://img.shields.io/badge/Portfolio-48C78D?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio"/>
   </a>
+ <a href="https://www.kaggle.com/gumaruw">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
+  </a> 
 </div>
 
 <!--
